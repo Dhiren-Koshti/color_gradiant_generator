@@ -1,0 +1,191 @@
+/* color_gradiant.css */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #069F6C, #8B882A);
+    transition: background-image 0.7s ease-in-out;
+}
+
+#main-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+#btn-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0 8px 15px rgba(255, 75, 43, 0.3);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(255, 75, 43, 0.5);
+}
+
+#text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#copy {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#copy:hover {
+    background-color: #555;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+/* color_gradiant.css */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #069F6C, #8B882A);
+    transition: background-image 0.7s ease-in-out;
+    padding: 20px; /* Add padding to handle small screens */
+}
+
+#main-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    max-width: 90%; /* Restrict the width to make it responsive */
+    width: 500px;
+}
+
+#btn-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+}
+
+button {
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0 8px 15px rgba(255, 75, 43, 0.3);
+    width: 100%; /* Full width on small screens */
+    max-width: 200px; /* Limit button width */
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(255, 75, 43, 0.5);
+}
+
+#text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#copy {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#copy:hover {
+    background-color: #555;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #main-container {
+        padding: 30px;
+        width: 100%;
+    }
+
+    #text {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #copy {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #text {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #copy {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
